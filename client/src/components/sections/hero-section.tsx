@@ -29,12 +29,16 @@ export function HeroSection() {
           </h1>
 
           <div className="w-full max-w-3xl px-4">
-            <img 
-              src="https://i.ibb.co/jZBN1Y4L/image.png" 
-              alt="Imagem" 
-              className="w-full h-auto rounded-lg"
-              data-testid="img-hero-additional"
-            />
+            <div className="aspect-video rounded-lg overflow-hidden shadow-2xl border-2 border-accent-gold/30">
+              <iframe 
+                src="https://screenapp.io/app/v/VZDOJvS4It" 
+                title="Mapa da Bíblia - Vídeo de Apresentação"
+                className="w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                data-testid="video-hero"
+              />
+            </div>
           </div>
 
           <p 
