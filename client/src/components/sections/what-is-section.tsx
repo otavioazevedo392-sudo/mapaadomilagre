@@ -22,7 +22,7 @@ export function WhatIsSection() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="rounded-xl overflow-hidden shadow-lg border border-card-border">
               <img 
-                src="https://i.ibb.co/twZMq5J1/Design-sem-nome-2.png" 
+                src="https://i.ibb.co/jZBN1Y4L/image.png" 
                 alt="Mapa da Bíblia - Material de Estudo" 
                 className="w-full h-full object-cover"
                 data-testid="img-what-is-product"
