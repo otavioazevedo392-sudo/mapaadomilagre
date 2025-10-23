@@ -29,12 +29,12 @@ export function HeroSection() {
             Entenda os 73 livros da Bíblia de forma simples e transforme sua vida com a Palavra de Deus
           </h1>
 
-          <div className="w-full max-w-3xl px-4">
-            <div className="aspect-video rounded-lg overflow-hidden shadow-2xl border-2 border-accent-gold/30 bg-black">
+          <div className="w-full max-w-md px-4 mx-auto">
+            <div className="rounded-lg overflow-hidden shadow-2xl border-2 border-accent-gold/30 bg-black" style={{ aspectRatio: '9/16' }}>
               <video 
                 src={videoFile}
                 controls
-                className="w-full h-full"
+                className="w-full h-full object-contain"
                 data-testid="video-hero"
                 preload="metadata"
               >
