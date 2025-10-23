@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { BookOpen, Heart } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { BookOpen, Heart, CheckCircle2, Sparkles } from "lucide-react";
 
 export function WhatIsSection() {
   const scrollToPurchase = () => {
@@ -12,54 +13,81 @@ export function WhatIsSection() {
   };
 
   return (
-    <section className="py-12 md:py-20 bg-card" data-testid="section-what-is">
+    <section className="py-16 md:py-24 bg-card" data-testid="section-what-is">
       <div className="container mx-auto max-w-7xl px-4 md:px-6">
-        <div className="max-w-4xl mx-auto space-y-8">
-          <h2 className="font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-card-foreground px-2 text-center" data-testid="text-what-is-title">
-            De Gênesis a Apocalipse — Entenda toda a Bíblia de forma clara e visual
-          </h2>
+        <div className="max-w-6xl mx-auto space-y-12">
+          <div className="text-center space-y-4">
+            <Badge 
+              className="bg-accent-gold/10 text-accent-gold-foreground border border-accent-gold/30 px-4 py-1.5 text-sm font-semibold"
+            >
+              <Sparkles className="w-4 h-4 mr-1" />
+              O QUE É
+            </Badge>
+            <h2 className="font-heading font-bold text-3xl sm:text-4xl md:text-5xl text-card-foreground px-2" data-testid="text-what-is-title">
+              De Gênesis a Apocalipse — <br className="hidden sm:block" />
+              <span className="text-accent-gold">Entenda toda a Bíblia</span> de forma clara e visual
+            </h2>
+          </div>
 
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="rounded-xl overflow-hidden shadow-lg border border-card-border">
-              <img 
-                src="https://i.ibb.co/jZBN1Y4L/image.png" 
-                alt="Mapa da Bíblia - Material de Estudo" 
-                className="w-full h-full object-cover"
-                data-testid="img-what-is-product"
-              />
-            </div>
-            
-            <div className="space-y-6 text-base md:text-lg text-muted-foreground leading-relaxed">
-            <p data-testid="text-what-is-description">
-              O <span className="font-semibold text-card-foreground">Mapa da Bíblia</span> é um guia visual completo, criado conforme a tradição católica e baseado na Bíblia Ave Maria.
-            </p>
-            
-            <p>
-              Ele reúne resumos, mapas e símbolos dos <span className="font-semibold text-card-foreground">73 livros</span>, para que você compreenda com facilidade a riqueza dos ensinamentos de cada parte da Sagrada Escritura.
-            </p>
-
-            <div className="bg-primary/5 border-l-4 border-primary rounded-lg p-6 my-8">
-              <div className="flex items-center gap-3 mb-3">
-                <Heart className="w-6 h-6 text-accent-gold" />
-                <p className="font-semibold text-lg text-card-foreground">
-                  Benefício emocional:
+          <div className="grid md:grid-cols-2 gap-10 md:gap-12 items-center">
+            <div className="order-2 md:order-1">
+              <div className="space-y-6">
+                <p className="text-lg text-card-foreground leading-relaxed" data-testid="text-what-is-description">
+                  O <span className="font-bold text-accent-gold">Mapa da Bíblia</span> é um guia visual completo, criado conforme a tradição católica e baseado na Bíblia Ave Maria.
                 </p>
+                
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  Ele reúne resumos, mapas e símbolos dos <span className="font-semibold text-card-foreground">73 livros</span>, para que você compreenda com facilidade a riqueza dos ensinamentos de cada parte da Sagrada Escritura.
+                </p>
+
+                <div className="space-y-3 pt-4">
+                  {[
+                    "Resumos claros de cada livro",
+                    "Mapas e cronologias visuais",
+                    "Símbolos e temas principais",
+                    "Versículos-chave destacados"
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-start gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-accent-gold flex-shrink-0 mt-0.5" />
+                      <span className="text-card-foreground">{item}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="bg-gradient-to-r from-accent-gold/10 to-accent-gold/5 border-l-4 border-accent-gold rounded-lg p-6 mt-8">
+                  <div className="flex items-center gap-3 mb-3">
+                    <Heart className="w-6 h-6 text-accent-gold fill-accent-gold/20" />
+                    <p className="font-bold text-lg text-card-foreground">
+                      Benefício emocional
+                    </p>
+                  </div>
+                  <p className="text-card-foreground font-medium">
+                    Estude com confiança, aprofunde sua fé e sinta a presença viva da Palavra em cada leitura.
+                  </p>
+                </div>
               </div>
-              <p className="text-card-foreground">
-                Estude com confiança, aprofunde sua fé e sinta a presença viva da Palavra em cada leitura.
-              </p>
+            </div>
+
+            <div className="order-1 md:order-2">
+              <div className="rounded-2xl overflow-hidden shadow-2xl border-2 border-accent-gold/20 hover-elevate transition-all duration-300">
+                <img 
+                  src="https://i.ibb.co/jZBN1Y4L/image.png" 
+                  alt="Mapa da Bíblia - Material de Estudo" 
+                  className="w-full h-full object-cover"
+                  data-testid="img-what-is-product"
+                />
+              </div>
             </div>
           </div>
-        </div>
 
-          <div className="text-center">
+          <div className="text-center pt-4">
             <Button 
               size="lg"
               onClick={scrollToPurchase}
-              className="bg-accent-gold hover-elevate active-elevate-2 text-accent-gold-foreground font-semibold text-sm md:text-lg w-full sm:w-auto px-4 md:px-6 whitespace-normal"
+              className="bg-accent-gold hover-elevate active-elevate-2 text-accent-gold-foreground font-bold text-base md:text-xl shadow-xl w-full sm:w-auto px-8 md:px-10 py-6 md:py-7 whitespace-normal"
               data-testid="button-cta-what-is"
             >
-              <BookOpen className="w-4 h-4 md:w-5 md:h-5 mr-1.5 md:mr-2 flex-shrink-0" />
+              <BookOpen className="w-5 h-5 md:w-6 md:h-6 mr-2 flex-shrink-0" />
               <span className="leading-tight text-center">QUERO O MEU AGORA!</span>
             </Button>
           </div>
