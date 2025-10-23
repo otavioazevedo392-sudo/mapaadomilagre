@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { BookOpen, Heart } from "lucide-react";
-import productImage2 from "@assets/stock_images/bible_study_guide_bo_2200efde.jpg";
 
 export function WhatIsSection() {
   const scrollToPurchase = () => {
@@ -19,7 +18,7 @@ export function WhatIsSection() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="rounded-xl overflow-hidden shadow-lg border border-card-border">
               <img 
-                src={productImage2} 
+                src="https://i.ibb.co/jZBN1Y4L/image.png" 
                 alt="Mapa da Bíblia - Material de Estudo" 
                 className="w-full h-full object-cover"
                 data-testid="img-what-is-product"
