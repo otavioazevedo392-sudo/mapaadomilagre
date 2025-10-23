@@ -21,6 +21,10 @@ export function FixedCTA() {
   const scrollToPurchase = () => {
     const offerSection = document.getElementById("offer-section");
     offerSection?.scrollIntoView({ behavior: "smooth" });
+    setTimeout(() => {
+      const premiumButton = document.querySelector('[data-testid="button-purchase-premium"]') as HTMLElement;
+      premiumButton?.scrollIntoView({ behavior: "smooth", block: "center" });
+    }, 500);
   };
 
   if (!isVisible) return null;
