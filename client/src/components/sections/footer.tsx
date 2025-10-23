@@ -6,7 +6,7 @@ export function Footer() {
           <p className="text-sm md:text-base">
             © 2025 Mapa do Católico — Todos os direitos reservados.
           </p>
-          <p className="text-xs md:text-sm opacity-90">
+          <p className="text-sm md:text-base opacity-90">
             Material protegido por direitos autorais.
           </p>
           <div className="pt-4 border-t border-primary-foreground/20">

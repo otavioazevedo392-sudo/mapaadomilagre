@@ -70,7 +70,7 @@ export function OfferSection() {
                   <div className="text-2xl md:text-4xl font-bold text-accent-gold">
                     {String(timeLeft.hours).padStart(2, "0")}
                   </div>
-                  <div className="text-[10px] md:text-xs text-muted-foreground mt-1">HORAS</div>
+                  <div className="text-xs md:text-sm text-muted-foreground mt-1">HORAS</div>
                 </div>
               </div>
               <div className="text-2xl md:text-3xl font-bold text-muted-foreground flex items-center">:</div>
@@ -79,7 +79,7 @@ export function OfferSection() {
                   <div className="text-2xl md:text-4xl font-bold text-accent-gold">
                     {String(timeLeft.minutes).padStart(2, "0")}
                   </div>
-                  <div className="text-[10px] md:text-xs text-muted-foreground mt-1">MINUTOS</div>
+                  <div className="text-xs md:text-sm text-muted-foreground mt-1">MINUTOS</div>
                 </div>
               </div>
               <div className="text-2xl md:text-3xl font-bold text-muted-foreground flex items-center">:</div>
@@ -88,7 +88,7 @@ export function OfferSection() {
                   <div className="text-2xl md:text-4xl font-bold text-accent-gold">
                     {String(timeLeft.seconds).padStart(2, "0")}
                   </div>
-                  <div className="text-[10px] md:text-xs text-muted-foreground mt-1">SEGUNDOS</div>
+                  <div className="text-xs md:text-sm text-muted-foreground mt-1">SEGUNDOS</div>
                 </div>
               </div>
             </div>
@@ -98,14 +98,14 @@ export function OfferSection() {
                 <p className="text-xl md:text-3xl text-muted-foreground line-through" data-testid="text-old-price">
                   R$ 97,00
                 </p>
-                <Badge variant="destructive" className="text-xs md:text-sm px-2 md:px-3 py-1">
+                <Badge variant="destructive" className="text-sm md:text-base px-2 md:px-3 py-1">
                   -62% OFF
                 </Badge>
               </div>
               <div className="text-4xl md:text-6xl font-bold text-accent-gold mb-2" data-testid="text-new-price">
                 R$ 37,00
               </div>
-              <p className="text-xs md:text-sm text-muted-foreground">
+              <p className="text-sm md:text-base text-muted-foreground">
                 pagamento único
               </p>
             </div>
