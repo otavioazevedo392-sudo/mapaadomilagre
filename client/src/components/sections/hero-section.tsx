@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { BookOpen, Users } from "lucide-react";
+import { BookOpen, Users, Heart } from "lucide-react";
 import videoFile from "@assets/VSL-PRONTA_1760556470610-D3tlH_rc_1761254874631.mp4";
 
 export function HeroSection() {
@@ -14,27 +14,36 @@ export function HeroSection() {
   };
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-primary/5 via-background to-accent-gold/10 py-12 md:py-20">
+    <section className="relative overflow-hidden bg-gradient-to-br from-accent-gold/5 via-background to-primary/5 py-16 md:py-24">
       <div className="container mx-auto max-w-7xl px-4 md:px-6">
-        <div className="flex flex-col items-center text-center space-y-8">
-          <Badge 
-            variant="secondary" 
-            className="text-sm md:text-base px-4 py-2 gap-2 bg-accent-gold/20 text-accent-gold-foreground border-accent-gold/30"
-            data-testid="badge-social-proof"
-          >
-            <Users className="w-4 h-4" />
-            +1.000 católicos satisfeitos
-          </Badge>
+        <div className="flex flex-col items-center text-center space-y-10">
+          <div className="space-y-4">
+            <Badge 
+              variant="secondary" 
+              className="text-sm md:text-base px-5 py-2 gap-2 bg-accent-gold hover-elevate text-accent-gold-foreground border border-accent-gold-border shadow-md"
+              data-testid="badge-social-proof"
+            >
+              <Users className="w-4 h-4" />
+              +1.000 católicos satisfeitos
+            </Badge>
+          </div>
 
           <h1 
-            className="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight max-w-4xl text-foreground px-2"
+            className="font-heading font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.1] max-w-5xl text-foreground px-2"
             data-testid="text-hero-title"
           >
-            Entenda os 73 livros da Bíblia de forma simples e transforme sua vida com a Palavra de Deus
+            Entenda os <span className="text-accent-gold">73 livros da Bíblia</span> de forma simples e transformadora
           </h1>
 
+          <p 
+            className="text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-3xl leading-relaxed px-2 font-medium"
+            data-testid="text-hero-subtitle"
+          >
+            Um método visual e fácil para compreender a Palavra de Deus — <span className="text-foreground font-semibold">nunca mais diga "não entendo a Bíblia"</span>
+          </p>
+
           <div className="w-full max-w-md px-4 mx-auto">
-            <div className="rounded-lg overflow-hidden shadow-2xl border-2 border-accent-gold/30 bg-black" style={{ aspectRatio: '9/16' }}>
+            <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-accent-gold/40 bg-black ring-4 ring-accent-gold/10" style={{ aspectRatio: '9/16' }}>
               <video 
                 src={videoFile}
                 controls
@@ -47,30 +56,28 @@ export function HeroSection() {
             </div>
           </div>
 
-          <p 
-            className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl leading-relaxed px-2"
-            data-testid="text-hero-subtitle"
-          >
-            Um método visual e fácil, aprovado por milhares de católicos, para compreender a Bíblia sem complicação — e nunca mais dizer "não entendo a Palavra".
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto sm:justify-center">
+          <div className="flex flex-col items-center gap-4 w-full">
             <Button 
               size="lg"
               onClick={scrollToPurchase}
-              className="bg-accent-gold hover-elevate active-elevate-2 text-accent-gold-foreground font-semibold text-sm md:text-lg shadow-lg w-full sm:w-auto px-4 md:px-6 whitespace-normal"
+              className="bg-accent-gold hover-elevate active-elevate-2 text-accent-gold-foreground font-bold text-base md:text-xl shadow-2xl w-full sm:w-auto px-8 md:px-12 py-6 md:py-7 whitespace-normal"
               data-testid="button-cta-hero"
             >
-              <BookOpen className="w-4 h-4 md:w-5 md:h-5 mr-1.5 md:mr-2 flex-shrink-0" />
-              <span className="leading-tight text-center">QUERO O MEU MAPA DA BÍBLIA!</span>
+              <BookOpen className="w-5 h-5 md:w-6 md:h-6 mr-2 flex-shrink-0" />
+              <span className="leading-tight text-center">QUERO MEU MAPA DA BÍBLIA AGORA!</span>
             </Button>
+            <p className="text-sm text-muted-foreground flex items-center gap-2">
+              <Heart className="w-4 h-4 text-accent-gold fill-accent-gold" />
+              Acesso imediato após a compra
+            </p>
           </div>
         </div>
       </div>
 
       <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-accent-gold/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-accent-gold/8 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-primary/8 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent-gold/5 rounded-full blur-3xl" />
       </div>
     </section>
   );
