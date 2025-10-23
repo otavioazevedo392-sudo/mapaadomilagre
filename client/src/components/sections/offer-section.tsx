@@ -96,14 +96,14 @@ export function OfferSection() {
             <div className="text-center mb-8">
               <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 mb-4">
                 <p className="text-xl md:text-3xl text-muted-foreground line-through" data-testid="text-old-price">
-                  R$ 97,00
+                  R$ 69,90
                 </p>
                 <Badge variant="destructive" className="text-sm md:text-base px-2 md:px-3 py-1">
-                  -62% OFF
+                  -81% OFF
                 </Badge>
               </div>
               <div className="text-4xl md:text-6xl font-bold text-accent-gold mb-2" data-testid="text-new-price">
-                R$ 37,00
+                R$ 13,90
               </div>
               <p className="text-sm md:text-base text-muted-foreground">
                 pagamento único
