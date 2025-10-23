@@ -11,7 +11,7 @@ export function WhatIsSection() {
     <section className="py-12 md:py-20 bg-card" data-testid="section-what-is">
       <div className="container mx-auto max-w-7xl px-4 md:px-6">
         <div className="max-w-4xl mx-auto text-center space-y-8">
-          <h2 className="font-heading font-bold text-3xl md:text-4xl text-card-foreground" data-testid="text-what-is-title">
+          <h2 className="font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-card-foreground px-2" data-testid="text-what-is-title">
             De Gênesis a Apocalipse — Entenda toda a Bíblia de forma clara e visual
           </h2>
 

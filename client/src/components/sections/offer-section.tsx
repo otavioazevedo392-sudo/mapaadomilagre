@@ -46,11 +46,11 @@ export function OfferSection() {
       data-testid="section-offer"
     >
       <div className="container mx-auto max-w-7xl px-4 md:px-6">
-        <div className="text-center space-y-4 mb-8">
-          <h2 className="font-heading font-bold text-3xl md:text-4xl text-foreground" data-testid="text-offer-title">
+        <div className="text-center space-y-4 mb-8 px-2">
+          <h2 className="font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-foreground" data-testid="text-offer-title">
             Aproveite o desconto especial de hoje!
           </h2>
-          <p className="text-lg text-muted-foreground" data-testid="text-offer-date">
+          <p className="text-base md:text-lg text-muted-foreground" data-testid="text-offer-date">
             Quinta-feira, 23 de Outubro de 2025
           </p>
         </div>

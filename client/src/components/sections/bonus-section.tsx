@@ -26,8 +26,8 @@ export function BonusSection() {
   return (
     <section className="py-12 md:py-20 bg-card" data-testid="section-bonus">
       <div className="container mx-auto max-w-7xl px-4 md:px-6">
-        <div className="text-center space-y-4 mb-12">
-          <h2 className="font-heading font-bold text-3xl md:text-4xl text-card-foreground" data-testid="text-bonus-title">
+        <div className="text-center space-y-4 mb-12 px-2">
+          <h2 className="font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-card-foreground" data-testid="text-bonus-title">
             Receba também estes presentes para fortalecer sua fé
           </h2>
         </div>

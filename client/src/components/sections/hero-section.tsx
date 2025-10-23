@@ -22,14 +22,14 @@ export function HeroSection() {
           </Badge>
 
           <h1 
-            className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl leading-tight max-w-4xl text-foreground"
+            className="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight max-w-4xl text-foreground px-2"
             data-testid="text-hero-title"
           >
             Entenda os 73 livros da Bíblia de forma simples e transforme sua vida com a Palavra de Deus
           </h1>
 
           <p 
-            className="text-lg md:text-xl text-muted-foreground max-w-3xl leading-relaxed"
+            className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl leading-relaxed px-2"
             data-testid="text-hero-subtitle"
           >
             Um método visual e fácil, aprovado por milhares de católicos, para compreender a Bíblia sem complicação — e nunca mais dizer "não entendo a Palavra".

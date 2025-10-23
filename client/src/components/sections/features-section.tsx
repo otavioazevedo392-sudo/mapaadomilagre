@@ -55,8 +55,8 @@ export function FeaturesSection() {
   return (
     <section className="py-12 md:py-20 bg-background" data-testid="section-features">
       <div className="container mx-auto max-w-7xl px-4 md:px-6">
-        <div className="text-center space-y-4 mb-12">
-          <h2 className="font-heading font-bold text-3xl md:text-4xl text-foreground" data-testid="text-features-title">
+        <div className="text-center space-y-4 mb-12 px-2">
+          <h2 className="font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-foreground" data-testid="text-features-title">
             O Que Você Vai Encontrar
           </h2>
         </div>
