@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { BookOpen, Users } from "lucide-react";
+import videoFile from "@assets/VSL-PRONTA_1760556470610-D3tlH_rc_1761254874631.mp4";
 
 export function HeroSection() {
   const scrollToPurchase = () => {
@@ -29,15 +30,16 @@ export function HeroSection() {
           </h1>
 
           <div className="w-full max-w-3xl px-4">
-            <div className="aspect-video rounded-lg overflow-hidden shadow-2xl border-2 border-accent-gold/30">
-              <iframe 
-                src="https://screenapp.io/app/v/VZDOJvS4It" 
-                title="Mapa da Bíblia - Vídeo de Apresentação"
+            <div className="aspect-video rounded-lg overflow-hidden shadow-2xl border-2 border-accent-gold/30 bg-black">
+              <video 
+                src={videoFile}
+                controls
                 className="w-full h-full"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
                 data-testid="video-hero"
-              />
+                preload="metadata"
+              >
+                Seu navegador não suporta o elemento de vídeo.
+              </video>
             </div>
           </div>
 
