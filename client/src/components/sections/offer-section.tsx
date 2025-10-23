@@ -101,7 +101,10 @@ export function OfferSection() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
-          <Card className="p-6 md:p-8 shadow-xl border-2 border-accent-gold/30">
+          <Card className="p-6 md:p-8 shadow-xl border-2 border-accent-gold/30 relative">
+            <h3 className="text-center font-bold text-xl md:text-2xl text-foreground mb-4">
+              Versão Essencial
+            </h3>
             <div className="text-center mb-6">
               <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 mb-4">
                 <p className="text-xl md:text-2xl text-muted-foreground line-through" data-testid="text-old-price-basic">
@@ -138,11 +141,11 @@ export function OfferSection() {
             <Button 
               size="lg"
               onClick={handlePurchase}
-              className="w-full bg-accent-gold hover-elevate active-elevate-2 text-accent-gold-foreground font-bold text-sm md:text-base shadow-lg px-3 md:px-6 whitespace-normal"
+              className="w-full bg-background hover-elevate active-elevate-2 text-foreground border-2 border-accent-gold font-bold text-sm md:text-base shadow-lg px-3 md:px-6 whitespace-normal"
               data-testid="button-purchase-basic"
             >
               <BookOpen className="w-5 h-5 mr-1.5 flex-shrink-0" />
-              <span className="leading-tight text-center">QUERO ESTA OFERTA!</span>
+              <span className="leading-tight text-center">Versão Essencial</span>
             </Button>
 
             <div className="flex flex-col items-center justify-center gap-3 mt-6 text-xs text-muted-foreground">
@@ -165,7 +168,11 @@ export function OfferSection() {
               MAIS ESCOLHIDA
             </Badge>
 
-            <div className="text-center mb-6 mt-2">
+            <h3 className="text-center font-bold text-xl md:text-2xl text-foreground mb-4 mt-2">
+              Versão Completa
+            </h3>
+
+            <div className="text-center mb-6">
               <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 mb-4">
                 <p className="text-xl md:text-2xl text-muted-foreground line-through" data-testid="text-old-price-premium">
                   R$ 109,90
@@ -203,11 +210,11 @@ export function OfferSection() {
             <Button 
               size="lg"
               onClick={handlePurchase}
-              className="w-full bg-accent-gold hover-elevate active-elevate-2 text-accent-gold-foreground font-bold text-sm md:text-base shadow-lg px-3 md:px-6 whitespace-normal"
+              className="w-full bg-accent-gold hover-elevate active-elevate-2 text-accent-gold-foreground font-bold text-sm md:text-base shadow-2xl px-3 md:px-6 whitespace-normal"
               data-testid="button-purchase-premium"
             >
               <BookOpen className="w-5 h-5 mr-1.5 flex-shrink-0" />
-              <span className="leading-tight text-center">SIM! QUERO O MEU MAPA DA BÍBLIA AGORA!</span>
+              <span className="leading-tight text-center">Garantir Versão Completa</span>
             </Button>
 
             <div className="flex flex-col items-center justify-center gap-3 mt-6 text-xs text-muted-foreground">
