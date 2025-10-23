@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
-import { Book, MapIcon, Clock, NotebookPen } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { Book, MapIcon, Clock, NotebookPen, Sparkles } from "lucide-react";
 
 const features = [
   {
@@ -53,50 +54,61 @@ const features = [
 
 export function FeaturesSection() {
   return (
-    <section className="py-12 md:py-20 bg-background" data-testid="section-features">
+    <section className="py-16 md:py-24 bg-background" data-testid="section-features">
       <div className="container mx-auto max-w-7xl px-4 md:px-6">
-        <div className="text-center space-y-4 mb-12 px-2">
-          <h2 className="font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-foreground" data-testid="text-features-title">
-            O Que Você Vai Encontrar
+        <div className="text-center space-y-4 mb-16 px-2">
+          <Badge 
+            className="bg-accent-gold/10 text-accent-gold-foreground border border-accent-gold/30 px-4 py-1.5 text-sm font-semibold"
+          >
+            <Sparkles className="w-4 h-4 mr-1" />
+            CONTEÚDO COMPLETO
+          </Badge>
+          <h2 className="font-heading font-bold text-3xl sm:text-4xl md:text-5xl text-foreground" data-testid="text-features-title">
+            O Que Você Vai <span className="text-accent-gold">Encontrar</span>
           </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Um guia completo e organizado para você dominar toda a Bíblia
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto">
           {features.map((feature) => {
             const Icon = feature.icon;
             return (
               <Card 
                 key={feature.id}
-                className="p-6 md:p-8 hover-elevate transition-all duration-300 bg-gradient-to-r from-accent-gold/5 to-transparent"
+                className="p-8 md:p-10 hover-elevate transition-all duration-300 border-2 border-card-border group"
                 data-testid={`card-feature-${feature.id}`}
               >
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-accent-gold/10 flex items-center justify-center">
-                    <Icon className="w-6 h-6 text-accent-gold" />
-                  </div>
-                  <div className="flex-1">
-                    <div className="flex items-center gap-3 mb-2">
-                      <span className="text-sm font-bold text-accent-gold">
-                        {feature.number}
-                      </span>
-                      <h3 className="font-heading font-bold text-xl md:text-2xl text-card-foreground">
+                <div className="flex flex-col space-y-5">
+                  <div className="flex items-start gap-5">
+                    <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-gradient-to-br from-accent-gold to-accent-gold/80 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <Icon className="w-8 h-8 text-accent-gold-foreground" />
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex items-center gap-3 mb-2">
+                        <Badge className="bg-accent-gold/20 text-accent-gold-foreground border-0 text-xs font-bold px-2 py-0.5">
+                          {feature.number}
+                        </Badge>
+                      </div>
+                      <h3 className="font-heading font-bold text-2xl md:text-2xl text-card-foreground">
                         {feature.title}
                       </h3>
                     </div>
                   </div>
-                </div>
 
-                <ul className="space-y-3 ml-16">
-                  {feature.items.map((item, index) => (
-                    <li 
-                      key={index}
-                      className="flex items-start gap-3 text-muted-foreground"
-                    >
-                      <span className="text-accent-gold mt-1">✓</span>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
+                  <ul className="space-y-3.5">
+                    {feature.items.map((item, index) => (
+                      <li 
+                        key={index}
+                        className="flex items-start gap-3 text-base text-muted-foreground"
+                      >
+                        <span className="text-accent-gold mt-0.5 font-bold text-lg">✓</span>
+                        <span className="leading-relaxed">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </Card>
             );
           })}
