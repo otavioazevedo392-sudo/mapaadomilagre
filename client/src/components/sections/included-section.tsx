@@ -63,11 +63,11 @@ export function IncludedSection() {
           <Button 
             size="lg"
             onClick={scrollToPurchase}
-            className="bg-accent-gold hover-elevate active-elevate-2 text-accent-gold-foreground font-semibold text-sm md:text-lg w-full sm:w-auto px-4 md:px-6"
+            className="bg-accent-gold hover-elevate active-elevate-2 text-accent-gold-foreground font-semibold text-sm md:text-lg w-full sm:w-auto px-4 md:px-6 whitespace-normal"
             data-testid="button-cta-included"
           >
             <BookOpen className="w-4 h-4 md:w-5 md:h-5 mr-1.5 md:mr-2 flex-shrink-0" />
-            <span className="leading-tight">GARANTIR MEU ACESSO AGORA!</span>
+            <span className="leading-tight text-center">GARANTIR MEU ACESSO AGORA!</span>
           </Button>
         </div>
       </div>

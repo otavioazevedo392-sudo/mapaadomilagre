@@ -30,11 +30,11 @@ export function FixedCTA() {
       <Button 
         size="lg"
         onClick={scrollToPurchase}
-        className="w-full bg-accent-gold hover-elevate active-elevate-2 text-accent-gold-foreground font-bold text-sm shadow-lg px-3"
+        className="w-full bg-accent-gold hover-elevate active-elevate-2 text-accent-gold-foreground font-bold text-sm shadow-lg px-3 whitespace-normal"
         data-testid="button-fixed-cta"
       >
         <BookOpen className="w-4 h-4 mr-1.5 flex-shrink-0" />
-        <span className="leading-tight">QUERO O MEU MAPA DA BÍBLIA!</span>
+        <span className="leading-tight text-center">QUERO O MEU MAPA DA BÍBLIA!</span>
       </Button>
     </div>
   );

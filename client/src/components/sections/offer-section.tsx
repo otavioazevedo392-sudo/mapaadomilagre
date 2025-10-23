@@ -129,11 +129,11 @@ export function OfferSection() {
             <Button 
               size="lg"
               onClick={handlePurchase}
-              className="w-full bg-accent-gold hover-elevate active-elevate-2 text-accent-gold-foreground font-bold text-sm md:text-lg shadow-lg px-3 md:px-6"
+              className="w-full bg-accent-gold hover-elevate active-elevate-2 text-accent-gold-foreground font-bold text-sm md:text-lg shadow-lg px-3 md:px-6 whitespace-normal"
               data-testid="button-purchase"
             >
               <BookOpen className="w-5 h-5 md:w-6 md:h-6 mr-1 md:mr-2 flex-shrink-0" />
-              <span className="leading-tight">SIM! QUERO O MEU MAPA DA BÍBLIA AGORA!</span>
+              <span className="leading-tight text-center">SIM! QUERO O MEU MAPA DA BÍBLIA AGORA!</span>
             </Button>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-6 text-sm text-muted-foreground">

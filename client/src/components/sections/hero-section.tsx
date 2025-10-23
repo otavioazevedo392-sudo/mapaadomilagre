@@ -39,11 +39,11 @@ export function HeroSection() {
             <Button 
               size="lg"
               onClick={scrollToPurchase}
-              className="bg-accent-gold hover-elevate active-elevate-2 text-accent-gold-foreground font-semibold text-sm md:text-lg shadow-lg w-full sm:w-auto px-4 md:px-6"
+              className="bg-accent-gold hover-elevate active-elevate-2 text-accent-gold-foreground font-semibold text-sm md:text-lg shadow-lg w-full sm:w-auto px-4 md:px-6 whitespace-normal"
               data-testid="button-cta-hero"
             >
               <BookOpen className="w-4 h-4 md:w-5 md:h-5 mr-1.5 md:mr-2 flex-shrink-0" />
-              <span className="leading-tight">QUERO O MEU MAPA DA BÍBLIA!</span>
+              <span className="leading-tight text-center">QUERO O MEU MAPA DA BÍBLIA!</span>
             </Button>
           </div>
 
