@@ -1,0 +1,53 @@
+import { Button } from "@/components/ui/button";
+import { BookOpen, Heart } from "lucide-react";
+
+export function WhatIsSection() {
+  const scrollToPurchase = () => {
+    const offerSection = document.getElementById("offer-section");
+    offerSection?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  return (
+    <section className="py-12 md:py-20 bg-card" data-testid="section-what-is">
+      <div className="container mx-auto max-w-7xl px-4 md:px-6">
+        <div className="max-w-4xl mx-auto text-center space-y-8">
+          <h2 className="font-heading font-bold text-3xl md:text-4xl text-card-foreground" data-testid="text-what-is-title">
+            De Gênesis a Apocalipse — Entenda toda a Bíblia de forma clara e visual
+          </h2>
+
+          <div className="space-y-6 text-base md:text-lg text-muted-foreground leading-relaxed">
+            <p data-testid="text-what-is-description">
+              O <span className="font-semibold text-card-foreground">Mapa da Bíblia</span> é um guia visual completo, criado conforme a tradição católica e baseado na Bíblia Ave Maria.
+            </p>
+            
+            <p>
+              Ele reúne resumos, mapas e símbolos dos <span className="font-semibold text-card-foreground">73 livros</span>, para que você compreenda com facilidade a riqueza dos ensinamentos de cada parte da Sagrada Escritura.
+            </p>
+
+            <div className="bg-primary/5 border-l-4 border-primary rounded-lg p-6 my-8">
+              <div className="flex items-center gap-3 mb-3">
+                <Heart className="w-6 h-6 text-accent-gold" />
+                <p className="font-semibold text-lg text-card-foreground">
+                  Benefício emocional:
+                </p>
+              </div>
+              <p className="text-card-foreground">
+                Estude com confiança, aprofunde sua fé e sinta a presença viva da Palavra em cada leitura.
+              </p>
+            </div>
+          </div>
+
+          <Button 
+            size="lg"
+            onClick={scrollToPurchase}
+            className="bg-accent-gold hover-elevate active-elevate-2 text-accent-gold-foreground font-semibold text-lg"
+            data-testid="button-cta-what-is"
+          >
+            <BookOpen className="w-5 h-5 mr-2" />
+            QUERO O MEU AGORA!
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+}
