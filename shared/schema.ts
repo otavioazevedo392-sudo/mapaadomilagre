@@ -81,7 +81,7 @@ export const faqs: FAQ[] = [
   {
     id: "3",
     question: "Como recebo o acesso?",
-    answer: "Após a confirmação do pagamento, você receberá imediatamente um email com o link de acesso à área de membros exclusiva, onde poderá baixar todos os materiais e bônus.",
+    answer: "Após a confirmação do pagamento, você receberá imediatamente um email com o PDF completo do Mapa da Bíblia e todos os bônus inclusos.",
   },
   {
     id: "4",
