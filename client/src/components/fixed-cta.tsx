@@ -26,15 +26,15 @@ export function FixedCTA() {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 p-4 bg-background/95 backdrop-blur-md border-t shadow-lg md:hidden">
+    <div className="fixed bottom-0 left-0 right-0 z-50 p-3 bg-background/95 backdrop-blur-md border-t shadow-lg md:hidden">
       <Button 
         size="lg"
         onClick={scrollToPurchase}
-        className="w-full bg-accent-gold hover-elevate active-elevate-2 text-accent-gold-foreground font-bold text-base shadow-lg"
+        className="w-full bg-accent-gold hover-elevate active-elevate-2 text-accent-gold-foreground font-bold text-sm shadow-lg px-3"
         data-testid="button-fixed-cta"
       >
-        <BookOpen className="w-5 h-5 mr-2" />
-        QUERO O MEU MAPA DA BÍBLIA!
+        <BookOpen className="w-4 h-4 mr-1.5 flex-shrink-0" />
+        <span className="leading-tight">QUERO O MEU MAPA DA BÍBLIA!</span>
       </Button>
     </div>
   );

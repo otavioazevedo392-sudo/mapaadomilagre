@@ -64,31 +64,31 @@ export function OfferSection() {
               </p>
             </div>
 
-            <div className="flex justify-center gap-4 mb-8" data-testid="countdown-timer">
+            <div className="flex justify-center gap-2 md:gap-4 mb-8" data-testid="countdown-timer">
               <div className="text-center">
-                <div className="bg-accent-gold/10 border border-accent-gold/30 rounded-lg px-4 py-3 min-w-[80px]">
-                  <div className="text-3xl md:text-4xl font-bold text-accent-gold">
+                <div className="bg-accent-gold/10 border border-accent-gold/30 rounded-lg px-2 py-2 md:px-4 md:py-3 min-w-[60px] md:min-w-[80px]">
+                  <div className="text-2xl md:text-4xl font-bold text-accent-gold">
                     {String(timeLeft.hours).padStart(2, "0")}
                   </div>
-                  <div className="text-xs text-muted-foreground mt-1">HORAS</div>
+                  <div className="text-[10px] md:text-xs text-muted-foreground mt-1">HORAS</div>
                 </div>
               </div>
-              <div className="text-3xl font-bold text-muted-foreground flex items-center">:</div>
+              <div className="text-2xl md:text-3xl font-bold text-muted-foreground flex items-center">:</div>
               <div className="text-center">
-                <div className="bg-accent-gold/10 border border-accent-gold/30 rounded-lg px-4 py-3 min-w-[80px]">
-                  <div className="text-3xl md:text-4xl font-bold text-accent-gold">
+                <div className="bg-accent-gold/10 border border-accent-gold/30 rounded-lg px-2 py-2 md:px-4 md:py-3 min-w-[60px] md:min-w-[80px]">
+                  <div className="text-2xl md:text-4xl font-bold text-accent-gold">
                     {String(timeLeft.minutes).padStart(2, "0")}
                   </div>
-                  <div className="text-xs text-muted-foreground mt-1">MINUTOS</div>
+                  <div className="text-[10px] md:text-xs text-muted-foreground mt-1">MINUTOS</div>
                 </div>
               </div>
-              <div className="text-3xl font-bold text-muted-foreground flex items-center">:</div>
+              <div className="text-2xl md:text-3xl font-bold text-muted-foreground flex items-center">:</div>
               <div className="text-center">
-                <div className="bg-accent-gold/10 border border-accent-gold/30 rounded-lg px-4 py-3 min-w-[80px]">
-                  <div className="text-3xl md:text-4xl font-bold text-accent-gold">
+                <div className="bg-accent-gold/10 border border-accent-gold/30 rounded-lg px-2 py-2 md:px-4 md:py-3 min-w-[60px] md:min-w-[80px]">
+                  <div className="text-2xl md:text-4xl font-bold text-accent-gold">
                     {String(timeLeft.seconds).padStart(2, "0")}
                   </div>
-                  <div className="text-xs text-muted-foreground mt-1">SEGUNDOS</div>
+                  <div className="text-[10px] md:text-xs text-muted-foreground mt-1">SEGUNDOS</div>
                 </div>
               </div>
             </div>
@@ -129,11 +129,11 @@ export function OfferSection() {
             <Button 
               size="lg"
               onClick={handlePurchase}
-              className="w-full bg-accent-gold hover-elevate active-elevate-2 text-accent-gold-foreground font-bold text-xl shadow-lg"
+              className="w-full bg-accent-gold hover-elevate active-elevate-2 text-accent-gold-foreground font-bold text-sm md:text-lg shadow-lg px-3 md:px-6"
               data-testid="button-purchase"
             >
-              <BookOpen className="w-6 h-6 mr-2" />
-              SIM! QUERO O MEU MAPA DA BÍBLIA AGORA!
+              <BookOpen className="w-5 h-5 md:w-6 md:h-6 mr-1 md:mr-2 flex-shrink-0" />
+              <span className="leading-tight">SIM! QUERO O MEU MAPA DA BÍBLIA AGORA!</span>
             </Button>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-6 text-sm text-muted-foreground">
