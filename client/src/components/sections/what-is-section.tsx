@@ -18,7 +18,7 @@ export function WhatIsSection() {
         <div className="max-w-6xl mx-auto space-y-12">
           <div className="text-center space-y-4">
             <Badge 
-              className="bg-accent-gold/10 text-accent-gold-foreground border border-accent-gold/30 px-4 py-1.5 text-sm font-semibold"
+              className="bg-accent-gold/10 text-accent-gold-foreground border border-accent-gold/30 text-sm font-semibold"
             >
               <Sparkles className="w-4 h-4 mr-1" />
               O QUE É
@@ -69,7 +69,7 @@ export function WhatIsSection() {
             </div>
 
             <div className="order-1 md:order-2">
-              <div className="rounded-2xl overflow-hidden shadow-2xl border-2 border-accent-gold/20 hover-elevate transition-all duration-300">
+              <div className="rounded-2xl overflow-hidden shadow-2xl border-2 border-accent-gold/20 transition-all duration-300">
                 <img 
                   src="https://i.ibb.co/jZBN1Y4L/image.png" 
                   alt="Mapa da Bíblia - Material de Estudo" 
@@ -84,10 +84,10 @@ export function WhatIsSection() {
             <Button 
               size="lg"
               onClick={scrollToPurchase}
-              className="bg-accent-gold hover-elevate active-elevate-2 text-accent-gold-foreground font-bold text-base md:text-xl shadow-xl w-full sm:w-auto px-8 md:px-10 py-6 md:py-7 whitespace-normal"
+              className="bg-accent-gold text-accent-gold-foreground font-bold shadow-xl w-full sm:w-auto"
               data-testid="button-cta-what-is"
             >
-              <BookOpen className="w-5 h-5 md:w-6 md:h-6 mr-2 flex-shrink-0" />
+              <BookOpen className="w-5 h-5 mr-2 flex-shrink-0" />
               <span className="leading-tight text-center">QUERO O MEU AGORA!</span>
             </Button>
           </div>

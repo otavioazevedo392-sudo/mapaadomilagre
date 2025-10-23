@@ -29,7 +29,7 @@ export function BonusSection() {
       <div className="container mx-auto max-w-7xl px-4 md:px-6">
         <div className="text-center space-y-4 mb-16 px-2">
           <Badge 
-            className="bg-accent-gold text-accent-gold-foreground px-4 py-1.5 text-sm font-semibold shadow-lg"
+            className="bg-accent-gold text-accent-gold-foreground text-sm font-semibold shadow-lg"
           >
             <Gift className="w-4 h-4 mr-1" />
             BÔNUS EXCLUSIVOS
@@ -49,11 +49,11 @@ export function BonusSection() {
             return (
               <Card 
                 key={bonus.id}
-                className="p-8 md:p-10 text-center hover-elevate transition-all duration-300 bg-background border-2 border-card-border group relative overflow-hidden"
+                className="p-8 md:p-10 text-center transition-all duration-300 bg-background border-2 border-card-border group relative overflow-hidden"
                 data-testid={`card-bonus-${bonus.id}`}
               >
                 <div className="absolute top-0 right-0 w-32 h-32 bg-accent-gold/5 rounded-full blur-2xl -mr-16 -mt-16 group-hover:bg-accent-gold/10 transition-colors" />
-                <Badge className="mb-4 bg-accent-gold/20 text-accent-gold-foreground border-0 text-xs font-bold">
+                <Badge className="mb-4 bg-accent-gold/20 text-accent-gold-foreground border-0 font-bold">
                   BÔNUS {index + 1}
                 </Badge>
                 <div className="w-20 h-20 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-accent-gold to-accent-gold/80 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300 relative z-10">

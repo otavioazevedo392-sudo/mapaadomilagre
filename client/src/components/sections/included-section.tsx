@@ -39,7 +39,7 @@ export function IncludedSection() {
       <div className="container mx-auto max-w-7xl px-4 md:px-6">
         <div className="text-center space-y-4 mb-16 px-2">
           <Badge 
-            className="bg-accent-gold/10 text-accent-gold-foreground border border-accent-gold/30 px-4 py-1.5 text-sm font-semibold"
+            className="bg-accent-gold/10 text-accent-gold-foreground border border-accent-gold/30 text-sm font-semibold"
           >
             <Star className="w-4 h-4 mr-1" />
             ACESSO COMPLETO
@@ -54,7 +54,7 @@ export function IncludedSection() {
         </div>
 
         <div className="mb-12 max-w-4xl mx-auto">
-          <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-accent-gold/30 ring-4 ring-accent-gold/10 hover-elevate transition-all duration-300">
+          <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-accent-gold/30 ring-4 ring-accent-gold/10 transition-all duration-300">
             <img 
               src="https://i.ibb.co/fzDJ1kBw/Design-sem-nome-2.png" 
               alt="Mapa da Bíblia - Conteúdo Exclusivo" 
@@ -70,7 +70,7 @@ export function IncludedSection() {
             return (
               <Card 
                 key={item.id}
-                className="p-8 hover-elevate transition-all duration-300 border-2 border-card-border group relative overflow-hidden"
+                className="p-8 transition-all duration-300 border-2 border-card-border group relative overflow-hidden"
                 data-testid={`card-included-${item.id}`}
               >
                 <div className="absolute top-0 left-0 w-32 h-32 bg-accent-gold/5 rounded-full blur-2xl -ml-16 -mt-16 group-hover:bg-accent-gold/10 transition-colors" />
@@ -94,10 +94,10 @@ export function IncludedSection() {
           <Button 
             size="lg"
             onClick={scrollToPurchase}
-            className="bg-accent-gold hover-elevate active-elevate-2 text-accent-gold-foreground font-bold text-base md:text-xl shadow-2xl w-full sm:w-auto px-8 md:px-10 py-6 md:py-7 whitespace-normal"
+            className="bg-accent-gold text-accent-gold-foreground font-bold shadow-2xl w-full sm:w-auto"
             data-testid="button-cta-included"
           >
-            <BookOpen className="w-5 h-5 md:w-6 md:h-6 mr-2 flex-shrink-0" />
+            <BookOpen className="w-5 h-5 mr-2 flex-shrink-0" />
             <span className="leading-tight text-center">GARANTIR MEU ACESSO AGORA!</span>
           </Button>
         </div>

@@ -20,7 +20,7 @@ export function HeroSection() {
           <div className="space-y-4">
             <Badge 
               variant="secondary" 
-              className="text-sm md:text-base px-5 py-2 gap-2 bg-accent-gold hover-elevate text-accent-gold-foreground border border-accent-gold-border shadow-md"
+              className="text-sm md:text-base gap-2 bg-accent-gold text-accent-gold-foreground border border-accent-gold-border shadow-md"
               data-testid="badge-social-proof"
             >
               <Users className="w-4 h-4" />
@@ -60,10 +60,10 @@ export function HeroSection() {
             <Button 
               size="lg"
               onClick={scrollToPurchase}
-              className="bg-accent-gold hover-elevate active-elevate-2 text-accent-gold-foreground font-bold text-base md:text-xl shadow-2xl w-full sm:w-auto px-8 md:px-12 py-6 md:py-7 whitespace-normal"
+              className="bg-accent-gold text-accent-gold-foreground font-bold shadow-2xl w-full sm:w-auto"
               data-testid="button-cta-hero"
             >
-              <BookOpen className="w-5 h-5 md:w-6 md:h-6 mr-2 flex-shrink-0" />
+              <BookOpen className="w-5 h-5 mr-2 flex-shrink-0" />
               <span className="leading-tight text-center">QUERO MEU MAPA DA BÍBLIA AGORA!</span>
             </Button>
             <p className="text-sm text-muted-foreground flex items-center gap-2">

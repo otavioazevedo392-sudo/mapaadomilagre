@@ -58,7 +58,7 @@ export function FeaturesSection() {
       <div className="container mx-auto max-w-7xl px-4 md:px-6">
         <div className="text-center space-y-4 mb-16 px-2">
           <Badge 
-            className="bg-accent-gold/10 text-accent-gold-foreground border border-accent-gold/30 px-4 py-1.5 text-sm font-semibold"
+            className="bg-accent-gold/10 text-accent-gold-foreground border border-accent-gold/30 text-sm font-semibold"
           >
             <Sparkles className="w-4 h-4 mr-1" />
             CONTEÚDO COMPLETO
@@ -87,7 +87,7 @@ export function FeaturesSection() {
                     </div>
                     <div className="flex-1">
                       <div className="flex items-center gap-3 mb-2">
-                        <Badge className="bg-accent-gold/20 text-accent-gold-foreground border-0 text-xs font-bold px-2 py-0.5">
+                        <Badge className="bg-accent-gold/20 text-accent-gold-foreground border-0 font-bold">
                           {feature.number}
                         </Badge>
                       </div>
