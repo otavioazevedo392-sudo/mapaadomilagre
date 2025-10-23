@@ -29,6 +29,15 @@ export function HeroSection() {
             Entenda os 73 livros da Bíblia de forma simples e transforme sua vida com a Palavra de Deus
           </h1>
 
+          <div className="w-full max-w-3xl px-4">
+            <img 
+              src="https://i.ibb.co/jZBN1Y4L/image.png" 
+              alt="Imagem" 
+              className="w-full h-auto rounded-lg"
+              data-testid="img-hero-additional"
+            />
+          </div>
+
           <p 
             className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl leading-relaxed px-2"
             data-testid="text-hero-subtitle"
