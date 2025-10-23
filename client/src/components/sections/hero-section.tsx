@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { BookOpen, Users } from "lucide-react";
+import productImage from "@assets/stock_images/bible_study_guide_bo_44d24844.jpg";
 
 export function HeroSection() {
   const scrollToPurchase = () => {
@@ -48,13 +49,13 @@ export function HeroSection() {
           </div>
 
           <div className="mt-8 w-full max-w-2xl">
-            <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent-gold/10 rounded-2xl shadow-xl border border-primary/20 flex items-center justify-center">
-              <div className="text-center space-y-4 p-8">
-                <BookOpen className="w-16 h-16 md:w-24 md:h-24 mx-auto text-accent-gold" />
-                <p className="text-muted-foreground text-sm md:text-base">
-                  Visualização do Produto
-                </p>
-              </div>
+            <div className="aspect-video rounded-2xl shadow-2xl border-2 border-accent-gold/30 overflow-hidden bg-card">
+              <img 
+                src={productImage} 
+                alt="Mapa da Bíblia - Guia Visual Completo dos 73 Livros" 
+                className="w-full h-full object-cover"
+                data-testid="img-hero-product"
+              />
             </div>
           </div>
         </div>

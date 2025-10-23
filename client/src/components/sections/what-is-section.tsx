@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { BookOpen, Heart } from "lucide-react";
+import productImage2 from "@assets/stock_images/bible_study_guide_bo_2200efde.jpg";
 
 export function WhatIsSection() {
   const scrollToPurchase = () => {
@@ -10,12 +11,22 @@ export function WhatIsSection() {
   return (
     <section className="py-12 md:py-20 bg-card" data-testid="section-what-is">
       <div className="container mx-auto max-w-7xl px-4 md:px-6">
-        <div className="max-w-4xl mx-auto text-center space-y-8">
-          <h2 className="font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-card-foreground px-2" data-testid="text-what-is-title">
+        <div className="max-w-4xl mx-auto space-y-8">
+          <h2 className="font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-card-foreground px-2 text-center" data-testid="text-what-is-title">
             De Gênesis a Apocalipse — Entenda toda a Bíblia de forma clara e visual
           </h2>
 
-          <div className="space-y-6 text-base md:text-lg text-muted-foreground leading-relaxed">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="rounded-xl overflow-hidden shadow-lg border border-card-border">
+              <img 
+                src={productImage2} 
+                alt="Mapa da Bíblia - Material de Estudo" 
+                className="w-full h-full object-cover"
+                data-testid="img-what-is-product"
+              />
+            </div>
+            
+            <div className="space-y-6 text-base md:text-lg text-muted-foreground leading-relaxed">
             <p data-testid="text-what-is-description">
               O <span className="font-semibold text-card-foreground">Mapa da Bíblia</span> é um guia visual completo, criado conforme a tradição católica e baseado na Bíblia Ave Maria.
             </p>
@@ -36,16 +47,19 @@ export function WhatIsSection() {
               </p>
             </div>
           </div>
+        </div>
 
-          <Button 
-            size="lg"
-            onClick={scrollToPurchase}
-            className="bg-accent-gold hover-elevate active-elevate-2 text-accent-gold-foreground font-semibold text-sm md:text-lg w-full sm:w-auto px-4 md:px-6 whitespace-normal"
-            data-testid="button-cta-what-is"
-          >
-            <BookOpen className="w-4 h-4 md:w-5 md:h-5 mr-1.5 md:mr-2 flex-shrink-0" />
-            <span className="leading-tight text-center">QUERO O MEU AGORA!</span>
-          </Button>
+          <div className="text-center">
+            <Button 
+              size="lg"
+              onClick={scrollToPurchase}
+              className="bg-accent-gold hover-elevate active-elevate-2 text-accent-gold-foreground font-semibold text-sm md:text-lg w-full sm:w-auto px-4 md:px-6 whitespace-normal"
+              data-testid="button-cta-what-is"
+            >
+              <BookOpen className="w-4 h-4 md:w-5 md:h-5 mr-1.5 md:mr-2 flex-shrink-0" />
+              <span className="leading-tight text-center">QUERO O MEU AGORA!</span>
+            </Button>
+          </div>
         </div>
       </div>
     </section>
