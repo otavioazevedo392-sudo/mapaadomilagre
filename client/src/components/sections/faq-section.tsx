@@ -17,8 +17,8 @@ export function FAQSection() {
   return (
     <section className="py-12 md:py-20 bg-background" data-testid="section-faq">
       <div className="container mx-auto max-w-4xl px-4 md:px-6">
-        <div className="text-center space-y-4 mb-12">
-          <h2 className="font-heading font-bold text-3xl md:text-4xl text-foreground" data-testid="text-faq-title">
+        <div className="text-center space-y-4 mb-12 px-2">
+          <h2 className="font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-foreground" data-testid="text-faq-title">
             Dúvidas Frequentes
           </h2>
         </div>
@@ -45,11 +45,11 @@ export function FAQSection() {
           <Button 
             size="lg"
             onClick={scrollToPurchase}
-            className="bg-accent-gold hover-elevate active-elevate-2 text-accent-gold-foreground font-semibold text-lg"
+            className="bg-accent-gold hover-elevate active-elevate-2 text-accent-gold-foreground font-semibold text-sm md:text-lg w-full sm:w-auto px-4 md:px-6"
             data-testid="button-cta-faq"
           >
-            <BookOpen className="w-5 h-5 mr-2" />
-            QUERO O MEU AGORA E COMEÇAR MEU ESTUDO!
+            <BookOpen className="w-4 h-4 md:w-5 md:h-5 mr-1.5 md:mr-2 flex-shrink-0" />
+            <span className="leading-tight">QUERO O MEU AGORA E COMEÇAR MEU ESTUDO!</span>
           </Button>
         </div>
       </div>
