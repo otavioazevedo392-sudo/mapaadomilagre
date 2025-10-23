@@ -40,12 +40,12 @@ export function OfferSection() {
   ];
 
   const includedPremium = [
-    "Mapa da Bíblia completo",
-    "5 bônus exclusivos:",
-    "⭐ BÔNUS 3: Guia dos Salmos Temáticos EXCLUSIVO",
-    "⭐ BÔNUS 4: Caderno de Oração Digital EXCLUSIVO",
-    "Acesso vitalício",
-    "Garantia total de 30 dias",
+    { text: "Mapa da Bíblia completo", highlight: false },
+    { text: "5 bônus exclusivos", highlight: false },
+    { text: "Acesso vitalício", highlight: false },
+    { text: "Garantia total de 30 dias", highlight: false },
+    { text: "⭐ BÔNUS 3: Guia dos Salmos Temáticos", highlight: true, highlightWord: "EXCLUSIVO" },
+    { text: "⭐ BÔNUS 4: Caderno de Oração Digital", highlight: true, highlightWord: "EXCLUSIVO" },
   ];
 
   return (
@@ -192,7 +192,9 @@ export function OfferSection() {
                     <div className="flex-shrink-0 w-6 h-6 rounded-full bg-accent-gold/10 flex items-center justify-center">
                       <Check className="w-4 h-4 text-accent-gold" />
                     </div>
-                    <span className="text-card-foreground text-sm font-medium">{item}</span>
+                    <span className="text-card-foreground text-sm font-medium">
+                      {item.text}{item.highlight && <span className="ml-1 text-accent-gold font-bold">{item.highlightWord}</span>}
+                    </span>
                   </li>
                 ))}
               </ul>
