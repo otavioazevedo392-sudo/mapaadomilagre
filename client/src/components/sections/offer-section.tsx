@@ -56,7 +56,7 @@ export function OfferSection() {
         </div>
 
         <div className="max-w-2xl mx-auto mb-8">
-          <Card className="p-8 md:p-12 shadow-xl border-2 border-accent-gold/30">
+          <Card className="p-6 md:p-12 shadow-xl border-2 border-accent-gold/30">
             <div className="flex items-center justify-center gap-2 mb-6">
               <Clock className="w-5 h-5 text-accent-gold" />
               <p className="text-sm font-semibold text-muted-foreground">
@@ -94,18 +94,18 @@ export function OfferSection() {
             </div>
 
             <div className="text-center mb-8">
-              <div className="flex items-center justify-center gap-4 mb-4">
-                <p className="text-2xl md:text-3xl text-muted-foreground line-through" data-testid="text-old-price">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 mb-4">
+                <p className="text-xl md:text-3xl text-muted-foreground line-through" data-testid="text-old-price">
                   R$ 97,00
                 </p>
-                <Badge variant="destructive" className="text-sm px-3 py-1">
+                <Badge variant="destructive" className="text-xs md:text-sm px-2 md:px-3 py-1">
                   -62% OFF
                 </Badge>
               </div>
-              <div className="text-5xl md:text-6xl font-bold text-accent-gold mb-2" data-testid="text-new-price">
+              <div className="text-4xl md:text-6xl font-bold text-accent-gold mb-2" data-testid="text-new-price">
                 R$ 37,00
               </div>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-xs md:text-sm text-muted-foreground">
                 pagamento único
               </p>
             </div>
