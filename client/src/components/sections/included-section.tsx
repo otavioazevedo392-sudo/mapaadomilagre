@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { FileText, Infinity, RefreshCw, BookOpen } from "lucide-react";
-import productImage3 from "@assets/stock_images/bible_study_guide_bo_c12b735c.jpg";
 
 const included = [
   {
@@ -46,7 +45,7 @@ export function IncludedSection() {
         <div className="mb-8 max-w-3xl mx-auto">
           <div className="rounded-xl overflow-hidden shadow-xl border-2 border-accent-gold/20">
             <img 
-              src={productImage3} 
+              src="https://i.ibb.co/fzDJ1kBw/Design-sem-nome-2.png" 
               alt="Mapa da Bíblia - Conteúdo Exclusivo" 
               className="w-full h-auto object-cover"
               data-testid="img-included-product"
