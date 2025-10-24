@@ -211,12 +211,14 @@ export function OfferSection() {
 
             <Button 
               size="lg"
-              onClick={handlePurchase}
+              asChild
               className="w-full bg-accent-gold hover-elevate active-elevate-2 text-accent-gold-foreground font-bold text-sm md:text-base shadow-2xl px-3 md:px-6 whitespace-normal"
               data-testid="button-purchase-premium"
             >
-              <BookOpen className="w-5 h-5 mr-1.5 flex-shrink-0" />
-              <span className="leading-tight text-center">Garantir Versão Completa</span>
+              <a href="https://pay.kirvano.com/d97a7062-f66b-4fe1-b5de-41e585b8bd7c" target="_blank" rel="noopener noreferrer">
+                <BookOpen className="w-5 h-5 mr-1.5 flex-shrink-0" />
+                <span className="leading-tight text-center">Garantir Versão Completa</span>
+              </a>
             </Button>
 
             <div className="flex flex-col items-center justify-center gap-3 mt-6 text-xs text-muted-foreground">
