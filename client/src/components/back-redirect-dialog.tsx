@@ -8,7 +8,8 @@ import {
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
-import { Check, X, AlertCircle, BookOpen, Shield, DollarSign } from "lucide-react";
+import { Check, X, AlertCircle, BookOpen, Shield, DollarSign, Clock } from "lucide-react";
+import { useEffect, useState } from "react";
 
 interface BackRedirectDialogProps {
   open: boolean;
@@ -16,11 +17,35 @@ interface BackRedirectDialogProps {
 }
 
 export function BackRedirectDialog({ open, onClose }: BackRedirectDialogProps) {
-  const included = [
-    "Mapa da Bíblia completo",
-    "3 bônus exclusivos",
-    "Acesso vitalício",
-    "Garantia total de 30 dias",
+  const [timeLeft, setTimeLeft] = useState({
+    minutes: 5,
+    seconds: 0,
+  });
+
+  useEffect(() => {
+    if (!open) return;
+
+    const timer = setInterval(() => {
+      setTimeLeft((prev) => {
+        if (prev.seconds > 0) {
+          return { ...prev, seconds: prev.seconds - 1 };
+        } else if (prev.minutes > 0) {
+          return { minutes: prev.minutes - 1, seconds: 59 };
+        }
+        return prev;
+      });
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, [open]);
+
+  const includedPremium = [
+    { text: "Mapa da Bíblia completo", highlight: false },
+    { text: "5 bônus exclusivos", highlight: false },
+    { text: "Acesso vitalício", highlight: false },
+    { text: "Garantia total de 30 dias", highlight: false },
+    { text: "BÔNUS 3: Guia dos Salmos Temáticos", highlight: true, highlightWord: "EXCLUSIVO" },
+    { text: "BÔNUS 4: Caderno de Oração Digital", highlight: true, highlightWord: "EXCLUSIVO" },
   ];
 
   return (
@@ -60,6 +85,33 @@ export function BackRedirectDialog({ open, onClose }: BackRedirectDialogProps) {
             </DialogDescription>
           </DialogHeader>
 
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <Clock className="w-4 h-4 text-accent-gold" />
+            <p className="text-sm font-semibold text-muted-foreground">
+              Oferta expira em:
+            </p>
+          </div>
+
+          <div className="flex justify-center gap-2 mb-6" data-testid="countdown-timer-back">
+            <div className="text-center">
+              <div className="bg-accent-gold/10 border border-accent-gold/30 rounded-lg px-3 py-2 min-w-[60px]">
+                <div className="text-2xl font-bold text-accent-gold">
+                  {String(timeLeft.minutes).padStart(2, "0")}
+                </div>
+                <div className="text-xs text-muted-foreground mt-1">MIN</div>
+              </div>
+            </div>
+            <div className="text-2xl font-bold text-muted-foreground flex items-center">:</div>
+            <div className="text-center">
+              <div className="bg-accent-gold/10 border border-accent-gold/30 rounded-lg px-3 py-2 min-w-[60px]">
+                <div className="text-2xl font-bold text-accent-gold">
+                  {String(timeLeft.seconds).padStart(2, "0")}
+                </div>
+                <div className="text-xs text-muted-foreground mt-1">SEG</div>
+              </div>
+            </div>
+          </div>
+
           <Card className="p-6 shadow-xl border-4 border-accent-gold relative">
             <Badge 
               className="absolute -top-3 left-1/2 -translate-x-1/2 bg-destructive text-destructive-foreground font-bold"
@@ -69,26 +121,26 @@ export function BackRedirectDialog({ open, onClose }: BackRedirectDialogProps) {
             </Badge>
 
             <h3 className="text-center font-bold text-xl md:text-2xl text-foreground mb-4 mt-2">
-              Versão Essencial
+              Versão Completa
             </h3>
 
             <div className="text-center mb-6">
               <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 mb-4">
                 <p className="text-lg md:text-xl text-muted-foreground line-through" data-testid="text-old-price-back">
-                  R$ 69,90
+                  R$ 109,90
                 </p>
                 <Badge variant="destructive">
-                  -86% OFF
+                  -88% OFF
                 </Badge>
               </div>
               <div className="text-4xl md:text-5xl font-bold text-accent-gold mb-2" data-testid="text-new-price-back">
-                R$ 9,90
+                R$ 12,90
               </div>
               <p className="text-sm md:text-base text-muted-foreground">
                 pagamento único
               </p>
               <p className="text-xs md:text-sm text-destructive font-semibold mt-2">
-                Oferta válida apenas para os próximos visitantes
+                Esta oferta expira em {timeLeft.minutes}:{String(timeLeft.seconds).padStart(2, "0")}
               </p>
             </div>
 
@@ -97,12 +149,14 @@ export function BackRedirectDialog({ open, onClose }: BackRedirectDialogProps) {
                 Você ainda recebe:
               </p>
               <ul className="space-y-3">
-                {included.map((item, index) => (
+                {includedPremium.map((item, index) => (
                   <li key={index} className="flex items-center gap-3" data-testid={`list-item-benefit-${index}`}>
                     <div className="flex-shrink-0 w-6 h-6 rounded-full bg-accent-gold/10 flex items-center justify-center">
                       <Check className="w-4 h-4 text-accent-gold" />
                     </div>
-                    <span className="text-card-foreground text-sm" data-testid={`text-benefit-${index}`}>{item}</span>
+                    <span className="text-card-foreground text-sm font-medium" data-testid={`text-benefit-${index}`}>
+                      {item.text}{item.highlight && <span className="ml-1 text-accent-gold font-bold">{item.highlightWord}</span>}
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -114,7 +168,7 @@ export function BackRedirectDialog({ open, onClose }: BackRedirectDialogProps) {
               className="w-full bg-accent-gold text-accent-gold-foreground font-bold shadow-2xl whitespace-normal mb-4"
               data-testid="button-accept-back-offer"
             >
-              <a href="https://pay.kirvano.com/99102701-800e-466a-9605-68e104b0a600" target="_blank" rel="noopener noreferrer">
+              <a href="https://pay.kirvano.com/411e8104-7c88-4d21-b8b3-0ae3b194026f" target="_blank" rel="noopener noreferrer">
                 <BookOpen className="w-5 h-5 mr-1.5 flex-shrink-0" />
                 <span className="leading-tight text-center">SIM! Quero Aproveitar Esta Oferta</span>
               </a>
