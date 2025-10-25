@@ -42,6 +42,7 @@ Preferred communication style: Simple, everyday language.
 - Countdown timer in offer section to create urgency
 - Smooth scroll navigation to offer section from multiple CTA buttons
 - Accordion component for FAQ section
+- Back redirect (exit-intent) system that shows a special discounted offer when user tries to leave the page
 
 ### Backend Architecture
 
