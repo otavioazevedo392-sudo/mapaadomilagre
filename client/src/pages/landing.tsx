@@ -9,8 +9,12 @@ import { MoreTestimonialsSection } from "@/components/sections/more-testimonials
 import { FAQSection } from "@/components/sections/faq-section";
 import { Footer } from "@/components/sections/footer";
 import { FixedCTA } from "@/components/fixed-cta";
+import { BackRedirectDialog } from "@/components/back-redirect-dialog";
+import { useBackRedirect } from "@/hooks/use-back-redirect";
 
 export default function Landing() {
+  const { showBackOffer, closeBackOffer } = useBackRedirect();
+
   return (
     <div className="min-h-screen bg-background">
       <HeroSection />
@@ -24,6 +28,7 @@ export default function Landing() {
       <FAQSection />
       <Footer />
       <FixedCTA />
+      <BackRedirectDialog open={showBackOffer} onClose={closeBackOffer} />
     </div>
   );
 }
