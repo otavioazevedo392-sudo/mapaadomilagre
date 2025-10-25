@@ -4,31 +4,71 @@ import { useToast } from "@/hooks/use-toast";
 const notifications = [
   {
     title: "✅ Nova compra realizada!",
-    description: "Maria de São Paulo adquiriu o Mapa da Bíblia há 3 minutos",
+    description: "Maria de São Paulo acabou de comprar este produto há 3 minutos!",
+  },
+  {
+    title: "✅ Nova compra realizada!",
+    description: "João do Rio de Janeiro acabou de comprar este produto há 5 minutos!",
   },
   {
     title: "⭐ Avaliação 5 estrelas!",
-    description: "Pedro acabou de avaliar: 'Material excelente!'",
+    description: "Pedro de Belo Horizonte: 'Material excelente, superou minhas expectativas!'",
   },
   {
-    title: "👥 Católico satisfeito!",
-    description: "João de Minas Gerais está estudando agora",
+    title: "✅ Nova compra realizada!",
+    description: "Ana Clara de Brasília acabou de comprar este produto há 2 minutos!",
   },
   {
-    title: "📖 Estudo em andamento!",
-    description: "Ana Clara está aprofundando seu conhecimento bíblico",
+    title: "✅ Nova compra realizada!",
+    description: "Carlos Eduardo de Curitiba acabou de comprar este produto há 7 minutos!",
   },
   {
-    title: "❤️ Transformação de vida!",
-    description: "Carlos relata: 'Minha fé nunca esteve tão forte'",
+    title: "⭐ Avaliação 5 estrelas!",
+    description: "Juliana de Porto Alegre: 'Minha fé nunca esteve tão forte!'",
   },
   {
-    title: "✅ Nova conquista!",
-    description: "Juliana completou a leitura do Antigo Testamento",
+    title: "✅ Nova compra realizada!",
+    description: "Fernanda de Salvador acabou de comprar este produto há 4 minutos!",
   },
   {
-    title: "👥 Comunidade crescendo!",
-    description: "+50 católicos se juntaram essa semana",
+    title: "✅ Nova compra realizada!",
+    description: "Roberto de Fortaleza acabou de comprar este produto há 1 minuto!",
+  },
+  {
+    title: "⭐ Avaliação 5 estrelas!",
+    description: "Camila de Recife: 'Agora entendo a Bíblia de forma completa!'",
+  },
+  {
+    title: "✅ Nova compra realizada!",
+    description: "Lucas de Manaus acabou de comprar este produto há 6 minutos!",
+  },
+  {
+    title: "✅ Nova compra realizada!",
+    description: "Patrícia de Goiânia acabou de comprar este produto há 8 minutos!",
+  },
+  {
+    title: "⭐ Avaliação 5 estrelas!",
+    description: "José Marcos de Florianópolis: 'Melhor investimento na minha vida espiritual!'",
+  },
+  {
+    title: "✅ Nova compra realizada!",
+    description: "Amanda de Belém acabou de comprar este produto há 3 minutos!",
+  },
+  {
+    title: "✅ Nova compra realizada!",
+    description: "Thiago de Vitória acabou de comprar este produto há 5 minutos!",
+  },
+  {
+    title: "⭐ Avaliação 5 estrelas!",
+    description: "Beatriz de São Luís: 'Finalmente consigo acompanhar a cronologia bíblica!'",
+  },
+  {
+    title: "✅ Nova compra realizada!",
+    description: "Rafael de Natal acabou de comprar este produto há 2 minutos!",
+  },
+  {
+    title: "✅ Nova compra realizada!",
+    description: "Gabriela de Maceió acabou de comprar este produto há 4 minutos!",
   },
 ];
 
