@@ -7,9 +7,11 @@ import {
 import { Button } from "@/components/ui/button";
 import { faqs } from "@shared/schema";
 import { BookOpen } from "lucide-react";
+import { trackLead } from "@/components/meta-pixel";
 
 export function FAQSection() {
   const scrollToPurchase = () => {
+    trackLead("CTA FAQ Section");
     const offerSection = document.getElementById("offer-section");
     offerSection?.scrollIntoView({ behavior: "smooth" });
     setTimeout(() => {

@@ -2,9 +2,16 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { BookOpen, Users, Heart } from "lucide-react";
 import videoFile from "@assets/VSL-PRONTA_1760556470610-D3tlH_rc_1761254874631.mp4";
+import { useEffect } from "react";
+import { trackViewContent, trackLead } from "@/components/meta-pixel";
 
 export function HeroSection() {
+  useEffect(() => {
+    trackViewContent("Mapa da Bíblia - Hero Section");
+  }, []);
+
   const scrollToPurchase = () => {
+    trackLead("CTA Hero Section");
     const offerSection = document.getElementById("offer-section");
     offerSection?.scrollIntoView({ behavior: "smooth" });
     setTimeout(() => {
