@@ -45,7 +45,7 @@ export function HeroSection() {
           <div className="w-full max-w-md px-4 mx-auto">
             <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-accent-gold/40 bg-black ring-4 ring-accent-gold/10" style={{ aspectRatio: '9/16' }}>
               <video 
-                src={`${videoFile}#t=0.005`}
+                src={`${videoFile}#t=0.007`}
                 controls
                 className="w-full h-full object-contain"
                 data-testid="video-hero"
