@@ -43,7 +43,7 @@ export function HeroSection() {
           </p>
 
           <div className="w-full max-w-md px-4 mx-auto">
-            <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-accent-gold/40 bg-black ring-4 ring-accent-gold/10" style={{ aspectRatio: '9/16' }}>
+            <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-accent-gold/40 bg-black ring-4 ring-accent-gold/10 aspect-[9/16]">
               <video 
                 src={`${videoFile}#t=0.009`}
                 controls
@@ -75,9 +75,9 @@ export function HeroSection() {
       </div>
 
       <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-accent-gold/8 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-primary/8 rounded-full blur-3xl" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent-gold/5 rounded-full blur-3xl" />
+        <div className="absolute top-0 right-0 max-w-[60vw] sm:max-w-[400px] aspect-square w-full bg-accent-gold/8 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 max-w-[60vw] sm:max-w-[400px] aspect-square w-full bg-primary/8 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-[70vw] sm:max-w-[500px] aspect-square w-full bg-accent-gold/5 rounded-full blur-3xl" />
       </div>
     </section>
   );

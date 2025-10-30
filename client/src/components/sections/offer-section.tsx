@@ -72,8 +72,8 @@ export function OfferSection() {
         </div>
 
         <div className="flex justify-center gap-2 md:gap-4 mb-12" data-testid="countdown-timer">
-          <div className="text-center">
-            <div className="bg-accent-gold/10 border border-accent-gold/30 rounded-lg px-2 py-2 md:px-4 md:py-3 min-w-[60px] md:min-w-[80px]">
+          <div className="flex-1 max-w-[80px] md:max-w-[100px]">
+            <div className="bg-accent-gold/10 border border-accent-gold/30 rounded-lg px-2 py-2 md:px-4 md:py-3">
               <div className="text-2xl md:text-4xl font-bold text-accent-gold">
                 {String(timeLeft.hours).padStart(2, "0")}
               </div>
@@ -81,8 +81,8 @@ export function OfferSection() {
             </div>
           </div>
           <div className="text-2xl md:text-3xl font-bold text-muted-foreground flex items-center">:</div>
-          <div className="text-center">
-            <div className="bg-accent-gold/10 border border-accent-gold/30 rounded-lg px-2 py-2 md:px-4 md:py-3 min-w-[60px] md:min-w-[80px]">
+          <div className="flex-1 max-w-[80px] md:max-w-[100px]">
+            <div className="bg-accent-gold/10 border border-accent-gold/30 rounded-lg px-2 py-2 md:px-4 md:py-3">
               <div className="text-2xl md:text-4xl font-bold text-accent-gold">
                 {String(timeLeft.minutes).padStart(2, "0")}
               </div>
@@ -90,8 +90,8 @@ export function OfferSection() {
             </div>
           </div>
           <div className="text-2xl md:text-3xl font-bold text-muted-foreground flex items-center">:</div>
-          <div className="text-center">
-            <div className="bg-accent-gold/10 border border-accent-gold/30 rounded-lg px-2 py-2 md:px-4 md:py-3 min-w-[60px] md:min-w-[80px]">
+          <div className="flex-1 max-w-[80px] md:max-w-[100px]">
+            <div className="bg-accent-gold/10 border border-accent-gold/30 rounded-lg px-2 py-2 md:px-4 md:py-3">
               <div className="text-2xl md:text-4xl font-bold text-accent-gold">
                 {String(timeLeft.seconds).padStart(2, "0")}
               </div>
