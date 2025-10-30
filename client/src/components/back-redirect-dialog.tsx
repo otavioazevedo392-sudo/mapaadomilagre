@@ -93,8 +93,8 @@ export function BackRedirectDialog({ open, onClose }: BackRedirectDialogProps) {
           </div>
 
           <div className="flex justify-center gap-2 mb-6" data-testid="countdown-timer-back">
-            <div className="text-center">
-              <div className="bg-accent-gold/10 border border-accent-gold/30 rounded-lg px-3 py-2 min-w-[60px]">
+            <div className="flex-1 max-w-[70px]">
+              <div className="bg-accent-gold/10 border border-accent-gold/30 rounded-lg px-3 py-2">
                 <div className="text-2xl font-bold text-accent-gold">
                   {String(timeLeft.minutes).padStart(2, "0")}
                 </div>
@@ -102,8 +102,8 @@ export function BackRedirectDialog({ open, onClose }: BackRedirectDialogProps) {
               </div>
             </div>
             <div className="text-2xl font-bold text-muted-foreground flex items-center">:</div>
-            <div className="text-center">
-              <div className="bg-accent-gold/10 border border-accent-gold/30 rounded-lg px-3 py-2 min-w-[60px]">
+            <div className="flex-1 max-w-[70px]">
+              <div className="bg-accent-gold/10 border border-accent-gold/30 rounded-lg px-3 py-2">
                 <div className="text-2xl font-bold text-accent-gold">
                   {String(timeLeft.seconds).padStart(2, "0")}
                 </div>
