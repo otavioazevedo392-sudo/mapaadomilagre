@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { FileText, Infinity, RefreshCw, BookOpen, Star } from "lucide-react";
-import { trackLead } from "@/components/meta-pixel";
 
 const included = [
   {
@@ -27,7 +26,6 @@ const included = [
 
 export function IncludedSection() {
   const scrollToPurchase = () => {
-    trackLead("CTA Included Section");
     const offerSection = document.getElementById("offer-section");
     offerSection?.scrollIntoView({ behavior: "smooth" });
     setTimeout(() => {

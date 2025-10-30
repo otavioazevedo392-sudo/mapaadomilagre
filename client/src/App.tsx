@@ -4,7 +4,6 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { PeriodicNotifications } from "@/components/periodic-notifications";
-import { MetaPixel } from "@/components/meta-pixel";
 import Landing from "@/pages/landing";
 import NotFound from "@/pages/not-found";
 
@@ -21,7 +20,6 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <MetaPixel />
         <Toaster />
         <PeriodicNotifications />
         <Router />

@@ -3,7 +3,6 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Shield, DollarSign, Check, BookOpen, Clock } from "lucide-react";
 import { useEffect, useState } from "react";
-import { trackViewContent, trackInitiateCheckout } from "@/components/meta-pixel";
 
 export function OfferSection() {
   const [timeLeft, setTimeLeft] = useState({
@@ -11,10 +10,6 @@ export function OfferSection() {
     minutes: 59,
     seconds: 59,
   });
-
-  useEffect(() => {
-    trackViewContent("Mapa da Bíblia - Offer Section");
-  }, []);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -149,12 +144,7 @@ export function OfferSection() {
               className="w-full bg-background hover-elevate active-elevate-2 text-foreground border-2 border-accent-gold font-bold text-sm md:text-base shadow-lg px-3 md:px-6 whitespace-normal"
               data-testid="button-purchase-basic"
             >
-              <a 
-                href="https://pay.kirvano.com/99102701-800e-466a-9605-68e104b0a600" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                onClick={() => trackInitiateCheckout(13.90)}
-              >
+              <a href="https://pay.kirvano.com/99102701-800e-466a-9605-68e104b0a600" target="_blank" rel="noopener noreferrer">
                 <BookOpen className="w-5 h-5 mr-1.5 flex-shrink-0" />
                 <span className="leading-tight text-center">Versão Essencial</span>
               </a>
@@ -225,12 +215,7 @@ export function OfferSection() {
               className="w-full bg-accent-gold hover-elevate active-elevate-2 text-accent-gold-foreground font-bold text-sm md:text-base shadow-2xl px-3 md:px-6 whitespace-normal"
               data-testid="button-purchase-premium"
             >
-              <a 
-                href="https://pay.kirvano.com/d97a7062-f66b-4fe1-b5de-41e585b8bd7c" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                onClick={() => trackInitiateCheckout(27.90)}
-              >
+              <a href="https://pay.kirvano.com/d97a7062-f66b-4fe1-b5de-41e585b8bd7c" target="_blank" rel="noopener noreferrer">
                 <BookOpen className="w-5 h-5 mr-1.5 flex-shrink-0" />
                 <span className="leading-tight text-center">Garantir Versão Completa</span>
               </a>

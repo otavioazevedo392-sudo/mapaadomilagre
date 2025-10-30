@@ -1,11 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { BookOpen, Heart, CheckCircle2, Sparkles } from "lucide-react";
-import { trackLead } from "@/components/meta-pixel";
 
 export function WhatIsSection() {
   const scrollToPurchase = () => {
-    trackLead("CTA What Is Section");
     const offerSection = document.getElementById("offer-section");
     offerSection?.scrollIntoView({ behavior: "smooth" });
     setTimeout(() => {
