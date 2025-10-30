@@ -130,11 +130,11 @@ export function BackRedirectDialog({ open, onClose }: BackRedirectDialogProps) {
                   R$ 109,90
                 </p>
                 <Badge variant="destructive">
-                  -88% OFF
+                  -85% OFF
                 </Badge>
               </div>
               <div className="text-4xl md:text-5xl font-bold text-accent-gold mb-2" data-testid="text-new-price-back">
-                R$ 12,90
+                R$ 16,90
               </div>
               <p className="text-sm md:text-base text-muted-foreground">
                 pagamento único
