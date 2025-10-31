@@ -6,20 +6,20 @@ const bonuses = [
   {
     id: "1",
     icon: CalendarDays,
-    title: "Plano de Leitura da Bíblia",
-    description: "Estudo guiado capítulo a capítulo, ideal para quem quer manter constância espiritual.",
+    title: "As Promessas Mais Poderosas da Bíblia",
+    description: "Separadas por tema para você encontrar rapidamente a palavra certa para cada momento.",
   },
   {
     id: "2",
     icon: BookHeart,
-    title: "Diário da Oração (Lectio Divina)",
-    description: "Planner de oração para aprofundar a leitura e meditação das Escrituras.",
+    title: "Palavras Que Renovam a Esperança",
+    description: "Nos momentos difíceis, encontre conforto e força nas promessas de Deus.",
   },
   {
     id: "3",
     icon: Printer,
-    title: "Versão Imprimível",
-    description: "Arquivos em alta qualidade para você imprimir e encadernar, se quiser.",
+    title: "Versículos Que Fortalecem a Fé",
+    description: "Palavras que trazem paz ao coração e renovam sua confiança em Deus.",
   },
 ];
 
@@ -35,11 +35,11 @@ export function BonusSection() {
             BÔNUS EXCLUSIVOS
           </Badge>
           <h2 className="font-heading font-bold text-3xl sm:text-4xl md:text-5xl text-card-foreground" data-testid="text-bonus-title">
-            Receba também estes <span className="text-accent-gold">presentes</span> <br className="hidden sm:block" />
-            para fortalecer sua fé
+            <span className="text-accent-gold">Guia das Promessas</span> <br className="hidden sm:block" />
+            Um Presente Especial Para Você
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Material complementar para enriquecer ainda mais sua jornada espiritual
+            E para que você aprofunde ainda mais sua fé, estamos liberando gratuitamente o Guia das Promessas — um bônus especial que vai fortalecer sua confiança em Deus em cada área da sua vida
           </p>
         </div>
 
@@ -68,6 +68,12 @@ export function BonusSection() {
               </Card>
             );
           })}
+        </div>
+
+        <div className="max-w-3xl mx-auto mt-16 text-center">
+          <p className="text-xl md:text-2xl text-card-foreground font-semibold italic">
+            "Quando você conhece as promessas que Deus fez a você, a fé se torna inabalável."
+          </p>
         </div>
       </div>
     </section>

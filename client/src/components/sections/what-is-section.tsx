@@ -24,8 +24,8 @@ export function WhatIsSection() {
               O QUE É
             </Badge>
             <h2 className="font-heading font-bold text-3xl sm:text-4xl md:text-5xl text-card-foreground px-2" data-testid="text-what-is-title">
-              De Gênesis a Apocalipse — <br className="hidden sm:block" />
-              <span className="text-accent-gold">Entenda toda a Bíblia</span> de forma clara e visual
+              Já tentou entender a Bíblia e <br className="hidden sm:block" />
+              <span className="text-accent-gold">sentiu que era difícil demais?</span>
             </h2>
           </div>
 
@@ -33,37 +33,53 @@ export function WhatIsSection() {
             <div className="order-2 md:order-1">
               <div className="space-y-6">
                 <p className="text-lg text-card-foreground leading-relaxed" data-testid="text-what-is-description">
-                  O <span className="font-bold text-accent-gold">Mapa da Bíblia</span> é um guia visual completo, criado conforme a tradição católica e baseado na Bíblia Ave Maria.
+                  Você começa a ler cheio de vontade... mas logo se perde.<br />
+                  As palavras parecem complicadas.<br />
+                  Os nomes são confusos.<br />
+                  E a mensagem… parece distante.
                 </p>
                 
                 <p className="text-base text-muted-foreground leading-relaxed">
-                  Ele reúne resumos, mapas e símbolos dos <span className="font-semibold text-card-foreground">73 livros</span>, para que você compreenda com facilidade a riqueza dos ensinamentos de cada parte da Sagrada Escritura.
+                  Você quer se aproximar de Deus, mas quando abre a Bíblia tradicional, sente como se ela tivesse sido escrita para teólogos — não para pessoas comuns que só querem entender a Palavra.
                 </p>
 
+                <div className="bg-gradient-to-r from-accent-gold/10 to-accent-gold/5 border-l-4 border-accent-gold rounded-lg p-6 mt-6">
+                  <p className="text-card-foreground font-medium italic mb-4">
+                    "Eu tento, mas não entendo…"<br />
+                    "Parece que Deus fala com todo mundo, menos comigo."
+                  </p>
+                  <p className="text-card-foreground font-semibold">
+                    Mas a verdade é que o problema nunca foi você.
+                  </p>
+                  <p className="text-muted-foreground mt-2">
+                    A forma como a Bíblia é apresentada — sem contexto, sem explicações visuais e com linguagem difícil — acaba afastando muita gente da fé.
+                  </p>
+                </div>
+
+                <div className="bg-gradient-to-r from-primary/10 to-primary/5 border-l-4 border-primary rounded-lg p-6 mt-8">
+                  <div className="flex items-center gap-3 mb-3">
+                    <Heart className="w-6 h-6 text-accent-gold fill-accent-gold/20" />
+                    <p className="font-bold text-lg text-card-foreground">
+                      Por isso nasceu o Mapa da Bíblia
+                    </p>
+                  </div>
+                  <p className="text-card-foreground font-medium">
+                    Um método simples, visual e fiel à tradição católica, criado para ajudar você a compreender a Bíblia de maneira clara, prática e inspirada.
+                  </p>
+                </div>
+
                 <div className="space-y-3 pt-4">
+                  <p className="font-semibold text-card-foreground">Com o Mapa da Bíblia, até quem nunca conseguiu entender os textos vai finalmente:</p>
                   {[
-                    "Resumos claros de cada livro",
-                    "Mapas e cronologias visuais",
-                    "Símbolos e temas principais",
-                    "Versículos-chave destacados"
+                    "Enxergar o sentido de cada passagem",
+                    "Compreender a história da salvação de forma cronológica e fácil",
+                    "Sentir que a Palavra de Deus está falando diretamente com o coração"
                   ].map((item, index) => (
                     <div key={index} className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-accent-gold flex-shrink-0 mt-0.5" />
                       <span className="text-card-foreground">{item}</span>
                     </div>
                   ))}
-                </div>
-
-                <div className="bg-gradient-to-r from-accent-gold/10 to-accent-gold/5 border-l-4 border-accent-gold rounded-lg p-6 mt-8">
-                  <div className="flex items-center gap-3 mb-3">
-                    <Heart className="w-6 h-6 text-accent-gold fill-accent-gold/20" />
-                    <p className="font-bold text-lg text-card-foreground">
-                      Benefício emocional
-                    </p>
-                  </div>
-                  <p className="text-card-foreground font-medium">
-                    Estude com confiança, aprofunde sua fé e sinta a presença viva da Palavra em cada leitura.
-                  </p>
                 </div>
               </div>
             </div>

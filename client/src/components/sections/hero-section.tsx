@@ -24,7 +24,7 @@ export function HeroSection() {
               data-testid="badge-social-proof"
             >
               <Users className="w-4 h-4" />
-              +1.000 católicos satisfeitos
+              +1.000 Católicos Já Transformaram Sua Maneira de Ler a Bíblia
             </Badge>
           </div>
 
@@ -32,14 +32,14 @@ export function HeroSection() {
             className="font-heading font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.1] max-w-5xl text-foreground px-2"
             data-testid="text-hero-title"
           >
-            Entenda os <span className="text-accent-gold">73 livros da Bíblia</span> de forma simples e transformadora
+            Entenda os <span className="text-accent-gold">73 Livros da Bíblia</span> de Forma Clara, Visual e Inspiradora
           </h1>
 
           <p 
             className="text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-3xl leading-relaxed px-2 font-medium"
             data-testid="text-hero-subtitle"
           >
-            Um método visual e fácil para compreender a Palavra de Deus — <span className="text-foreground font-semibold">nunca mais diga "não entendo a Bíblia"</span>
+            Um método simples e poderoso que faz você compreender a Palavra de Deus como nunca antes — <span className="text-foreground font-semibold">e nunca mais dizer "não entendo a Bíblia"</span>
           </p>
 
           <div className="w-full max-w-md px-4 mx-auto">

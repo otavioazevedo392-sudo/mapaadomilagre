@@ -19,50 +19,20 @@ export type FAQ = z.infer<typeof faqSchema>;
 export const testimonials: Testimonial[] = [
   {
     id: "1",
-    name: "José Marcos",
-    text: "Me surpreendi com a clareza e profundidade que o material traz para o estudo da Bíblia Sagrada.",
+    name: "Camila Santos",
+    text: "Antes eu lia e não entendia nada... agora tudo faz sentido.",
     rating: 5,
   },
   {
     id: "2",
-    name: "Camila Santos",
-    text: "Antes, eu lia a Bíblia sem entender as conexões. Agora tudo faz sentido.",
+    name: "José Marcos",
+    text: "O Mapa da Bíblia me mostrou conexões que eu nunca tinha percebido.",
     rating: 5,
   },
   {
     id: "3",
     name: "Juliana Ramos",
-    text: "Cada leitura agora tem um propósito. O Mapa da Bíblia me guiou de volta à Palavra.",
-    rating: 5,
-  },
-  {
-    id: "4",
-    name: "Pedro Oliveira",
-    text: "Material incrível! Finalmente consigo acompanhar a cronologia bíblica sem me perder.",
-    rating: 5,
-  },
-  {
-    id: "5",
-    name: "Maria Silva",
-    text: "Recomendo para todos que desejam aprofundar seu conhecimento das Escrituras.",
-    rating: 5,
-  },
-  {
-    id: "6",
-    name: "Carlos Eduardo",
-    text: "A organização visual facilita muito o estudo. Excelente investimento na minha fé.",
-    rating: 5,
-  },
-  {
-    id: "7",
-    name: "Ana Paula",
-    text: "Os bônus são maravilhosos! O plano de leitura mudou minha rotina espiritual.",
-    rating: 5,
-  },
-  {
-    id: "8",
-    name: "Roberto Lima",
-    text: "Nunca imaginei que poderia entender a Bíblia de forma tão completa e profunda.",
+    text: "Hoje cada leitura tem propósito. Sinto Deus falando comigo.",
     rating: 5,
   },
 ];

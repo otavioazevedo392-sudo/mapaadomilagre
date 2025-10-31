@@ -6,6 +6,7 @@ import { BonusSection } from "@/components/sections/bonus-section";
 import { IncludedSection } from "@/components/sections/included-section";
 import { OfferSection } from "@/components/sections/offer-section";
 import { MoreTestimonialsSection } from "@/components/sections/more-testimonials-section";
+import { FinalCTASection } from "@/components/sections/final-cta-section";
 import { FAQSection } from "@/components/sections/faq-section";
 import { Footer } from "@/components/sections/footer";
 import { FixedCTA } from "@/components/fixed-cta";
@@ -25,6 +26,7 @@ export default function Landing() {
       <IncludedSection />
       <OfferSection />
       <MoreTestimonialsSection />
+      <FinalCTASection />
       <FAQSection />
       <Footer />
       <FixedCTA />

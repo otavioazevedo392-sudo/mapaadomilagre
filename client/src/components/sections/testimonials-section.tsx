@@ -36,10 +36,10 @@ export function TestimonialsSection() {
       <div className="container mx-auto max-w-7xl px-4 md:px-6">
         <div className="text-center space-y-4 mb-12 px-2">
           <h2 className="font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-foreground" data-testid="text-testimonials-title">
-            O que estão dizendo sobre o Mapa da Bíblia
+            O Que Dizem Os Católicos Que Já Transformaram Sua Leitura
           </h2>
           <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto">
-            Milhares de fiéis já transformaram seu estudo da Palavra. Veja o que dizem:
+            Veja como o Mapa da Bíblia mudou a vida de quem usou
           </p>
         </div>
 

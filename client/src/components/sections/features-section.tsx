@@ -9,11 +9,9 @@ const features = [
     number: "1",
     title: "Mapa dos 73 Livros",
     items: [
-      "Resumo do livro",
-      "Temas centrais e simbologias",
-      "Principais personagens",
-      "Linha do tempo e eventos",
-      "Versículos-chave",
+      "Visualize cada livro da Bíblia",
+      "Com resumos, temas e personagens",
+      "Versículos-chave de cada livro",
     ],
   },
   {
@@ -22,21 +20,19 @@ const features = [
     number: "2",
     title: "Panorama da Bíblia",
     items: [
-      "Antigo e Novo Testamento",
-      "Gêneros literários",
-      "Tabela Periódica da Bíblia",
-      "Conexões entre os livros",
+      "Descubra como os livros se conectam entre si",
+      "O que cada parte revela sobre o plano de Deus",
     ],
   },
   {
     id: "3",
     icon: Clock,
     number: "3",
-    title: "Eventos Cronológicos",
+    title: "Linha do Tempo da Fé",
     items: [
-      "Linha do tempo da história da salvação",
-      "Contexto histórico e conexões",
-      "Entendimento progressivo da fé",
+      "Acompanhe toda a jornada da humanidade",
+      "Sob a ótica da salvação",
+      "Do Gênesis à Ressurreição",
     ],
   },
   {
@@ -45,9 +41,9 @@ const features = [
     number: "4",
     title: "Registros da Fé",
     items: [
-      "Espaço para anotações",
+      "Espaços dedicados para anotações",
       "Reflexões pessoais",
-      "Aplicação prática no dia a dia",
+      "Aplicação prática da Palavra no seu dia a dia",
     ],
   },
 ];
@@ -64,10 +60,10 @@ export function FeaturesSection() {
             CONTEÚDO COMPLETO
           </Badge>
           <h2 className="font-heading font-bold text-3xl sm:text-4xl md:text-5xl text-foreground" data-testid="text-features-title">
-            O Que Você Vai <span className="text-accent-gold">Encontrar</span>
+            O Que Você Vai <span className="text-accent-gold">Receber</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Um guia completo e organizado para você dominar toda a Bíblia
+            Um guia completo e organizado para você compreender toda a Bíblia
           </p>
         </div>
 
