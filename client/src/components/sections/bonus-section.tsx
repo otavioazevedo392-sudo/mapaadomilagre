@@ -39,7 +39,7 @@ export function BonusSection() {
             Um Presente Especial Para Você
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            E para que você aprofunde ainda mais sua fé, estamos liberando gratuitamente o Guia das Promessas — um bônus especial que vai fortalecer sua confiança em Deus em cada área da sua vida
+            E para que você aprofunde ainda mais sua fé, vamos liberar um desconto exclusivo para voce apos a compra o Guia das Promessas — um bônus especial que vai fortalecer sua confiança em Deus em cada área da sua vida
           </p>
         </div>
 
