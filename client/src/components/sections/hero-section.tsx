@@ -43,13 +43,13 @@ export function HeroSection() {
           </p>
 
           <div className="w-full max-w-md px-4 mx-auto">
-            <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-accent-gold/40 bg-black ring-4 ring-accent-gold/10 aspect-[9/16]">
+            <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-accent-gold/40 ring-4 ring-accent-gold/10 aspect-[9/16]">
               <video 
                 src={`${videoFile}#t=0.01`}
                 controls
                 className="w-full h-full object-contain"
                 data-testid="video-hero"
-                preload="metadata"
+                preload="auto"
               >
                 Seu navegador não suporta o elemento de vídeo.
               </video>
