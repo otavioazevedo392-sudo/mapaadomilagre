@@ -83,6 +83,7 @@ export function PeriodicNotifications() {
         title: randomNotification.title,
         description: randomNotification.description,
         duration: 5000,
+        variant: "success",
       });
     };
 
